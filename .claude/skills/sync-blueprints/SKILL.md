@@ -17,15 +17,15 @@ Destination: this repo's root
 
    ```powershell
    robocopy "C:\Users\buffy\Documents\Dyson Sphere Program\Blueprint" "C:\Users\buffy\dsp_blueprints" /MIR /XD .git .claude /XF .gitignore "*.swp"
-   Write-Output "EXIT:$LASTEXITCODE"
    ```
 
-   Robocopy exit codes 0-7 are success (bit flags for copied/extra/mismatched files); only 8+ is a real failure. Check for `EXIT:` >= 8 and stop to report the error if so.
+   Run robocopy as the sole command in the call — don't append a second statement (e.g. `Write-Output "EXIT:$LASTEXITCODE"`). A string with an embedded `$variable` expansion trips the permission classifier's "expandable strings with embedded expressions" check and forces a prompt even when the base command is allowlisted. The PowerShell tool's own result already reports the exit code — read that directly instead of echoing it.
 
-2. **Stage everything** in the repo:
+   Robocopy exit codes 0-7 are success (bit flags for copied/extra/mismatched files); only 8+ is a real failure. Check the reported exit code and stop to report the error if it's >= 8.
+
+2. **Stage everything** in the repo. The Bash tool's working directory is already this repo — do not `cd` into it first; prepending `cd` changes the literal command string and breaks the permission allowlist, forcing an approval prompt:
 
    ```bash
-   cd "/c/Users/buffy/dsp_blueprints"
    git add -A
    ```
 

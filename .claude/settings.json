@@ -1,7 +1,7 @@
 {
   "permissions": {
     "allow": [
-      "PowerShell(robocopy \"C:\\\\Users\\\\buffy\\\\Documents\\\\Dyson Sphere Program\\\\Blueprint\" \"C:\\\\Users\\\\buffy\\\\dsp_blueprints\" /MIR *)",
+      "PowerShell(robocopy \"C:\\Users\\buffy\\Documents\\Dyson Sphere Program\\Blueprint\" \"C:\\Users\\buffy\\dsp_blueprints\"*)",
       "Bash(git add -A)",
       "Bash(git diff --cached --stat)",
       "Bash(git commit -m *)",
