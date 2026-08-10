@@ -30,6 +30,8 @@ Full ingredient breakdowns are listed under each item below.
   - 6x Circuit Board + 4x Plasma Exciter + 12x Steel + 12x Stone Brick → 1x Oil Extractor (Assembler)
 - Water Pump
   - 2x Circuit Board + 4x Electric Motor + 8x Iron Ingot + 4x Stone Brick → 1x Water Pump (Assembler)
+- Orbital Collector
+  - 1x Interstellar Logistics Station + 20x Frame Material + 10x Photon Combiner + 10x Reinforced Thruster → 1x Orbital Collector (Assembler, 6s)
 
 ### Logistics
 - Conveyor Belt Mk.I
@@ -167,6 +169,157 @@ one-off items like ILS.
 17. **Electromagnetic Turbine cluster** — Attack Drone (High), Precision Drone (Med), Planetary Shield Generator (Low)
 18. **Photon Combiner** — Ray Receiver (Low-Med), Laser Turret (Med)
 19. **Strange Matter** — Quantum Chemical Plant (Low), Gravity Missile Set (Med)
+
+## Ingredient-Sharing View (new — every item mapped to the ingredients it needs)
+
+This is the reverse index of the category list above: for each direct ingredient,
+which items consume it, and how much per unit. Ranked by item-count so the top
+of the list is where a shared feeder belt pays off most. This is the view to
+design the floor plan from — route one belt of the ingredient down the row and
+splitter off into every assembler listed under it.
+
+### Tier 1 — Core feeders (8+ items share these; build dedicated belts)
+
+**Circuit Board** (16 items) — Oil Extractor 6x, Water Pump 2x, Sorter Mk.I 1x, Splitter 1x, Spray Coater 2x, Arc Smelter 4x, Assembling Machine Mk.I 4x, Chemical Plant 2x, Oil Refinery 6x, Matrix Lab 4x, Missile Turret 12x, Laser Turret 6x, Battlefield Analysis Base 18x, Precision Drone 2x, Prototype 2x, Holo Beacon 2x
+
+**Iron Ingot** (15 items) — Wind Turbine 6x, Tesla Tower 2x, Water Pump 8x, Conveyor Belt Mk.I 2x, Sorter Mk.I 1x, Splitter 3x, Logistics Distributor 8x, Logistics Bot 2x, Logistics Drone 5x, Storage Mk.I 4x, Arc Smelter 4x, Assembling Machine Mk.I 4x, Matrix Lab 8x, Prototype 3x, Holo Beacon 3x
+
+**Steel** (15 items) — Ray Receiver 20x, Oil Extractor 12x, Spray Coater 4x, PLS 40x, Storage Mk.II 8x, Chemical Plant 8x, Oil Refinery 10x, Fractionator 8x, EM-Rail Ejector 20x, Laser Turret 9x, Missile Turret 8x, Signal Tower 12x, Planetary Shield Generator 20x, Battlefield Analysis Base 12x, Foundation 1x
+
+**Processor** (14 items) — Ray Receiver 5x, Logistics Distributor 4x, PLS 40x, Logistics Bot 1x, Logistics Drone 2x, Interstellar Logistics Vessel 10x, Assembling Machine Mk.II 4x, Fractionator 1x, Miniature Particle Collider 8x, EM-Rail Ejector 5x, Plasma Turret 5x, Attack Drone 1x, Corvette 2x, Destroyer 4x
+
+**Stone Brick** (9 items) — Oil Extractor 12x, Water Pump 4x, Storage Mk.I 4x, Storage Mk.II 8x, Arc Smelter 2x, Chemical Plant 8x, Oil Refinery 10x, Fractionator 4x, Foundation 3x
+
+**Plasma Exciter** (9 items) — Wireless Power Tower 3x, Oil Extractor 4x, Spray Coater 2x, Logistics Distributor 4x, Oil Refinery 6x, Plasma Turret 5x, Laser Turret 6x, Prototype 1x, Holo Beacon 2x
+
+**Super-Magnetic Ring** (8 items) — Ray Receiver 20x, Satellite Substation 10x, Advanced Mining Machine 10x, Conveyor Belt Mk.III 1x, Miniature Particle Collider 50x, EM-Rail Ejector 10x, Plasma Turret 10x, Planetary Shield Generator 5x
+
+**Titanium Alloy** (8 items) — Artificial Star 20x, Advanced Mining Machine 20x, ILS 40x, Interstellar Logistics Vessel 10x, Miniature Particle Collider 20x, Vertical Launching Silo 80x, Plasma Turret 20x, Corvette 5x
+
+**Quantum Chip** (8 items) — Artificial Star 10x, Advanced Mining Machine 4x, Negentropy Smelter 4x, Assembling Machine Mk.III 2x, Re-composing Assembler 4x, Quantum Chemical Plant 3x, Self-evolution Lab 4x, Vertical Launching Silo 10x
+
+### Tier 2 — Secondary feeders (4–7 items)
+
+**Frame Material** (8) — Satellite Substation 2x, Artificial Star 20x, Advanced Mining Machine 10x, Plane Smelter 5x, Miniature Particle Collider 20x, Vertical Launching Silo 30x, Destroyer 20x, Orbital Collector 20x
+
+**Particle Container** (6) — PLS 20x, ILS 20x, Planetary Shield Generator 5x, Attack Drone 1x, Corvette 3x, Antimatter Capsule 1x
+
+**Gear** (5) — Wind Turbine 1x, Conveyor Belt Mk.I 1x, Splitter 2x, Assembling Machine Mk.I 8x, EM-Rail Ejector 20x
+
+**Electromagnetic Turbine** (5) — Conveyor Belt Mk.II 1x, Sorter Mk.III 1x, Planetary Shield Generator 20x, Attack Drone 1x, Precision Drone 1x
+
+**Magnetic Coil** (4) — Wind Turbine 3x, Tesla Tower 1x, Arc Smelter 2x, Matrix Lab 4x
+
+**Engine** (4) — Logistics Bot 1x, Missile Turret 6x, Battlefield Analysis Base 12x, Prototype 1x
+
+### Tier 3 — Minor shared ingredients (2–3 items; only worth a shared belt if those items sit near each other anyway)
+
+- **Glass** (3) — Chemical Plant 8x, Fractionator 4x, Matrix Lab 4x
+- **Electric Motor** (3) — Water Pump 4x, Sorter Mk.II 1x, Missile Turret 6x
+- **Graphene** (3) — Conveyor Belt Mk.III 1x, Assembling Machine Mk.II 8x, Miniature Particle Collider 10x
+- **Photon Combiner** (4) — Ray Receiver 10x, Laser Turret 9x, Precision Drone 2x, Orbital Collector 10x
+- **Reinforced Thruster** (4) — Interstellar Logistics Vessel 2x, Corvette 1x, Destroyer 4x, Orbital Collector 10x
+- **Strange Matter** (3) — Quantum Chemical Plant 3x, Destroyer 1x, Gravity Missile Set 3x
+- **Wireless Power Tower** (2, as sub-component) — Satellite Substation 1x, Signal Tower 2x
+- **Prototype** (2, as sub-component) — Attack Drone 1x, Precision Drone 1x
+- **Microcrystalline Component** (2) — Spray Coater 2x, Battlefield Analysis Base 6x
+- **Energy Shard** (2) — Negentropy Smelter 30x, Re-composing Assembler 30x
+- **Titanium Glass** (2) — Plasma Turret 10x, Quantum Chemical Plant 10x
+
+### Unique — used by only one item (no grouping benefit, route as a spur off its own line)
+
+High-Purity Silicon (Ray Receiver), Grating Crystal (Advanced Mining Machine), Titanium Ingot (PLS), Crystal Silicon (Signal Tower), Annihilation Constraint Sphere (Artificial Star), Plane Filter & Unipolar Magnet (Plane Smelter), Negentropy Singularity (Negentropy Smelter), Particle Broadband (Assembling Machine Mk.III), Matter Recombinator (Re-composing Assembler), Silicon-Based Neuron & Dark Fog Matrix (Self-evolution Lab), Graviton Lens (Vertical Launching Silo), Crystal Explosive Unit & Supersonic Missile Set (Gravity Missile Set), Plasma Capsule / Hydrogen / Antimatter (Antimatter Capsule), Prism (Holo Beacon)
+
+### Note on the tier-chains (Belt/Sorter/Assembler/Smelter Mk.I→III)
+
+These aren't ingredient-sharing groups — each tier consumes the previous tier as
+its own ingredient, so they're a strict sequential line, not something that
+merges with the Tier 1/2 feeders above. Keep them as their own 4 rows on the
+floor plan (as in the old Production Groups list), but note they still draw
+Iron Ingot / Circuit Board / Steel / Processor / Gear from the Tier 1/2 belts
+for their *other* inputs (e.g. Assembling Machine Mk.I also needs Iron Ingot +
+Circuit Board directly, on top of consuming Mk.I → Mk.II → Mk.III up the chain).
+
+## Recipe-Overlap Clusters (what you actually asked for — items grouped by shared FULL ingredient sets)
+
+The "Ingredient-Sharing View" above answers "which items touch this one ingredient"
+(too broad — nearly everything touches Iron Ingot). This section answers the real
+question: **which items are built from almost the same basket of ingredients**,
+so a handful of feeder belts can produce several finished items with only one or
+two extra spurs per item. Ranked by overlap strength.
+
+### Identical ingredient sets (same inputs, different quantities — build side-by-side, same belts, zero extra spurs)
+- **Storage Mk.II + Foundation** — both just Steel + Stone Brick
+- **Oil Extractor + Oil Refinery** — both Circuit Board + Plasma Exciter + Steel + Stone Brick
+- **Splitter + Assembling Machine Mk.I** — both Iron Ingot + Gear + Circuit Board
+
+### Strong overlap (3 of 4 ingredients shared — one extra spur per item)
+- **Iron Ingot + Magnetic Coil + Circuit Board core** — Arc Smelter (+Stone Brick), Matrix Lab (+Glass)
+- **Steel + Circuit Board + Engine core** — Missile Turret (+Electric Motor), Battlefield Analysis Base (+Microcrystalline Component)
+- **Steel + Circuit Board + Plasma Exciter core** — Laser Turret (+Photon Combiner), Spray Coater (+Microcrystalline Component)
+- **Iron Ingot + Circuit Board + Plasma Exciter core** — Prototype (+Engine), Holo Beacon (+Prism)
+- **Titanium Alloy + Processor + Reinforced Thruster core** — Interstellar Logistics Vessel (exact subset, no extra), Corvette (+Particle Container)
+- **Steel + Glass + Stone Brick core** — Chemical Plant (+Circuit Board), Fractionator (+Processor)
+
+### Moderate overlap (2 shared ingredients — worth co-locating, 2 extra spurs per item)
+- **Iron Ingot + Magnetic Coil base** — Tesla Tower (exact, no extra), Wind Turbine (+Gear) — Tesla Tower's whole recipe is a subset of Wind Turbine's
+- **Prototype + Electromagnetic Turbine base** — Attack Drone (+Processor, +Particle Container), Precision Drone (+Circuit Board, +Photon Combiner)
+- **Frame Material + Titanium Alloy + Quantum Chip base** — Artificial Star (+Annihilation Constraint Sphere), Vertical Launching Silo (+Graviton Lens), Advanced Mining Machine (+Super-Magnetic Ring, +Grating Crystal)
+- **Super-Magnetic Ring + Titanium Alloy + Processor base** — Miniature Particle Collider (+Frame Material, +Graphene), Plasma Turret (+Plasma Exciter, +Titanium Glass)
+- **Photon Combiner base** — ties Orbital Collector loosely to Ray Receiver / Laser Turret / Precision Drone (each shares just Photon Combiner, nothing else)
+
+### Sub-component chains (one item's *output* is a direct ingredient of the next — build the feeder first, tap it twice)
+- **Wireless Power Tower chain** — Wireless Power Tower → feeds both Satellite Substation and Signal Tower
+  - Factoriolab planner for the full **Tesla Tower → Wireless Power Tower → Satellite Substation** sequence: https://factoriolab.github.io/dsp/list?z=eJwdxbEKgzAUBdC.ecMdim9xu8sLKJQgLaXQ7GYINgiBSqb37UWXc3ZahA6SifvJLI32AgZpfJ5VBqhUpstyGaFScqfdpOXOBxJWbPihY4QtsDfsA9vcvgiTh1lqbQyevHiUg6p.Rt0g5A__&v=11
+- **Prototype chain** — Prototype → feeds both Attack Drone and Precision Drone (this is why the "Prototype + Electromagnetic Turbine" cluster above works: build Prototype once, split it into both drones)
+- **PLS → ILS → Orbital Collector chain** — PLS feeds ILS directly, and ILS is itself a direct ingredient of Orbital Collector (1x ILS per Orbital Collector). So this is a 3-deep chain: build PLS, tap it into ILS, and tap ILS again into Orbital Collector.
+
+### No meaningful overlap with anything else (recipe is too unique to cluster — build as standalone spurs)
+Ray Receiver, Water Pump, Logistics Distributor, Logistics Bot, Logistics Drone, Storage Mk.I, EM-Rail Ejector, Self-evolution Lab, Quantum Chemical Plant, Negentropy Smelter, Plane Smelter, Antimatter Capsule, Gravity Missile Set, Destroyer
+
+### Custom Group (user-defined): Power & Energy Line
+Wind Turbine, Wireless Power Tower, Satellite Substation, Artificial Star, Vertical Launching Silo, Advanced Mining Machine.
+
+This isn't a single overlap tier — it's the sub-component chain plus a bridging
+ingredient stitched into one row:
+- **Tesla Tower** (Iron Ingot + Magnetic Coil) → feeds **Wireless Power Tower**
+  (+ Plasma Exciter) → feeds **Satellite Substation** (+ Frame Material,
+  Super-Magnetic Ring). Note: Tesla Tower itself isn't named in this group's
+  item list, but it's still a hard requirement — Wireless Power Tower cannot
+  be built without it, so it needs its own small feeder even though it's not
+  one of the 6 tracked here. **Wind Turbine** sits alongside it in the group
+  instead, sharing the same Iron Ingot + Magnetic Coil base as Tesla Tower
+  (the "moderate overlap" pairing from earlier) without itself feeding
+  anything downstream.
+- **Satellite Substation** shares its **Frame Material** input with
+  **Artificial Star** (+ Quantum Chip, Titanium Alloy, Annihilation Constraint
+  Sphere), **Vertical Launching Silo** (+ Quantum Chip, Titanium Alloy,
+  Graviton Lens), and now **Advanced Mining Machine** (+ Quantum Chip,
+  Titanium Alloy, Super-Magnetic Ring, Grating Crystal) — all four share the
+  Frame Material + Titanium Alloy + Quantum Chip core (Advanced Mining Machine
+  additionally ties back to Satellite Substation via Super-Magnetic Ring)
+
+Practical layout: run Wind Turbine and the Tesla Tower → Wireless Power Tower
+→ Satellite Substation sub-chain first, then continue the Frame Material belt
+past Satellite Substation down to Artificial Star, Vertical Launching Silo,
+and Advanced Mining Machine, picking up Quantum Chip and Titanium Alloy spurs
+(plus Super-Magnetic Ring for Advanced Mining Machine) for those last three.
+
+Factoriolab planner below covers the original 5-item version of this group
+(Tesla Tower, Wireless Power Tower, Satellite Substation, Artificial Star,
+Vertical Launching Silo) — it predates the Wind Turbine swap and Advanced
+Mining Machine addition above, so treat it as reference for the Tesla Tower
+sub-chain rather than the full current group:
+https://factoriolab.github.io/dsp/list?z=eJwlxbEKwjAUBdC.ecMdJFnc7vICFiSIIoLdzRBqbEmpZHrfLo3LOTM1wjuZ-fmnThJx3hmkUu-Ak8rbXmGAl8Kxm7uxu3YXeMmpUQ9SU-MVI16YsKHhCL1AH9AndDJ9I5wsDFJK5WqLZYvypfc.dVUncw__&v=11
+
+### Practical takeaway
+The three **identical-set pairs** are the easy wins — build them as literally the
+same two-input feeder row with two assemblers side by side. The **strong-overlap**
+clusters are next best: one shared 3-input belt row, one extra item-specific spur.
+Everything in "no meaningful overlap" should just get its own small dedicated
+setup rather than trying to force it into a shared line — the previous
+Ingredient-Sharing View is still useful for those since it tells you which single
+belt (Iron Ingot, Circuit Board, etc.) to tap for their inputs.
 
 ## Open questions
 - [ ] Trim this list down to only what you actually want the mall to make (full list above is everything possible, not necessarily desired)
