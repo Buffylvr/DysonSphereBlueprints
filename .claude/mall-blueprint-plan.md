@@ -75,11 +75,11 @@ Full ingredient breakdowns are listed under each item below.
   - 1x Arc Smelter + 5x Frame Material + 4x Plane Filter + 15x Unipolar Magnet → 1x Plane Smelter (Assembler)
 - Negentropy Smelter
   - 1x Plane Smelter + 10x Negentropy Singularity + 30x Energy Shard + 4x Quantum Chip → 1x Negentropy Smelter (Assembler, 6s)
-- Assembling Machine Mk.I / II / III
+- Assembling Machine Mk.I / II
   - Mk.I: 4x Iron Ingot + 8x Gear + 4x Circuit Board → 1x Assembling Machine Mk.I (Assembler)
   - Mk.II: 1x Assembling Machine Mk.I + 8x Graphene + 4x Processor → 1x Assembling Machine Mk.II (Assembler)
-  - Mk.III: 1x Assembling Machine Mk.II + 8x Particle Broadband + 2x Quantum Chip → 1x Assembling Machine Mk.III (Assembler)
 - Re-composing Assembler
+  - Internal precursor (not a tracked mall output): 1x Assembling Machine Mk.II + 8x Particle Broadband + 2x Quantum Chip → 1x Assembling Machine Mk.III (Assembler)
   - 1x Assembling Machine Mk.III + 10x Matter Recombinator + 30x Energy Shard + 4x Quantum Chip → 1x Re-composing Assembler (Assembler, 5s)
 - Chemical Plant
   - 2x Circuit Board + 8x Glass + 8x Steel + 8x Stone Brick → 1x Chemical Plant (Assembler)
@@ -149,7 +149,7 @@ one-off items like ILS.
 ### Tier-chain groups (locked — each tier requires the previous as an ingredient)
 1. **Belt line** — Conveyor Belt Mk.I (High), Mk.II (High), Mk.III (High)
 2. **Sorter line** — Sorter Mk.I (High), Mk.II (High), Mk.III (High)
-3. **Assembler line** — Assembling Machine Mk.I (High), Mk.II (High), Mk.III (High), Re-composing Assembler (High)
+3. **Assembler line** — Assembling Machine Mk.I (High), Mk.II (High), Re-composing Assembler (High) — Mk.III is built inline as Re-composing Assembler's precursor, no longer tracked as its own mall output
 4. **Smelter line** — Arc Smelter (High), Plane Smelter (High), Negentropy Smelter (High)
 
 ### Ingredient-cluster groups
@@ -196,7 +196,7 @@ splitter off into every assembler listed under it.
 
 **Titanium Alloy** (8 items) — Artificial Star 20x, Advanced Mining Machine 20x, ILS 40x, Interstellar Logistics Vessel 10x, Miniature Particle Collider 20x, Vertical Launching Silo 80x, Plasma Turret 20x, Corvette 5x
 
-**Quantum Chip** (8 items) — Artificial Star 10x, Advanced Mining Machine 4x, Negentropy Smelter 4x, Assembling Machine Mk.III 2x, Re-composing Assembler 4x, Quantum Chemical Plant 3x, Self-evolution Lab 4x, Vertical Launching Silo 10x
+**Quantum Chip** (8 items, incl. 1 untracked intermediate) — Artificial Star 10x, Advanced Mining Machine 4x, Negentropy Smelter 4x, Assembling Machine Mk.III 2x (untracked, built inline for Re-composing Assembler), Re-composing Assembler 4x, Quantum Chemical Plant 3x, Self-evolution Lab 4x, Vertical Launching Silo 10x
 
 ### Tier 2 — Secondary feeders (4–7 items)
 
@@ -254,7 +254,7 @@ two extra spurs per item. Ranked by overlap strength.
 - **Splitter + Assembling Machine Mk.I** — both Iron Ingot + Gear + Circuit Board
 
 ### Strong overlap (3 of 4 ingredients shared — one extra spur per item)
-- **Iron Ingot + Magnetic Coil + Circuit Board core** — Arc Smelter (+Stone Brick), Matrix Lab (+Glass)
+- **Iron Ingot + Magnetic Coil + Circuit Board core** — Arc Smelter (+Stone Brick). (Matrix Lab moved to 🔒 LOCKED Group 3 on 2026-08-12; no longer paired here. Arc Smelter is still built regardless as part of the Smelter tier-chain, just without a shared-belt companion now.)
 - **Steel + Circuit Board + Engine core** — Missile Turret (+Electric Motor), Battlefield Analysis Base (+Microcrystalline Component)
 - **Steel + Circuit Board + Plasma Exciter core** — Laser Turret (+Photon Combiner), Spray Coater (+Microcrystalline Component)
 - **Iron Ingot + Circuit Board + Plasma Exciter core** — Prototype (+Engine), Holo Beacon (+Prism)
@@ -275,42 +275,89 @@ two extra spurs per item. Ranked by overlap strength.
 - **PLS → ILS → Orbital Collector chain** — PLS feeds ILS directly, and ILS is itself a direct ingredient of Orbital Collector (1x ILS per Orbital Collector). So this is a 3-deep chain: build PLS, tap it into ILS, and tap ILS again into Orbital Collector.
 
 ### No meaningful overlap with anything else (recipe is too unique to cluster — build as standalone spurs)
-Ray Receiver, Water Pump, Logistics Distributor, Logistics Bot, Logistics Drone, Storage Mk.I, EM-Rail Ejector, Self-evolution Lab, Quantum Chemical Plant, Negentropy Smelter, Plane Smelter, Antimatter Capsule, Gravity Missile Set, Destroyer
+Ray Receiver, Water Pump, Logistics Distributor, Logistics Bot, Logistics Drone, Storage Mk.I, EM-Rail Ejector, Quantum Chemical Plant, Plane Smelter, Antimatter Capsule, Gravity Missile Set, Destroyer
 
-### Custom Group (user-defined): Power & Energy Line
-Wind Turbine, Wireless Power Tower, Satellite Substation, Artificial Star, Vertical Launching Silo, Advanced Mining Machine.
+### 🔒 LOCKED Group: Power & Energy Line
+**Tesla Tower, Satellite Substation, Wireless Power Tower, Advanced Mining Machine, Artificial Star, Vertical Launching Silo.**
 
-This isn't a single overlap tier — it's the sub-component chain plus a bridging
-ingredient stitched into one row:
+Locked 2026-08-09, corrected same day to add Vertical Launching Silo back in
+— no further changes to this group's membership. (Superseded two earlier
+drafts: the original 5-item version that used only Vertical Launching Silo
+without Advanced Mining Machine, and a 6-item version that added Wind Turbine
+alongside Tesla Tower instead. This final list keeps both Advanced Mining
+Machine and Vertical Launching Silo, and drops Wind Turbine.)
+
+**Blueprint**: `Planetary Mall Pieces\Planetary Mall 1 of 10.txt` (committed
+2026-08-09, part of the blueprint sync) is the in-game build for this group.
+
+Ingredient logic (for reference — group composition itself is locked, not this reasoning):
 - **Tesla Tower** (Iron Ingot + Magnetic Coil) → feeds **Wireless Power Tower**
   (+ Plasma Exciter) → feeds **Satellite Substation** (+ Frame Material,
-  Super-Magnetic Ring). Note: Tesla Tower itself isn't named in this group's
-  item list, but it's still a hard requirement — Wireless Power Tower cannot
-  be built without it, so it needs its own small feeder even though it's not
-  one of the 6 tracked here. **Wind Turbine** sits alongside it in the group
-  instead, sharing the same Iron Ingot + Magnetic Coil base as Tesla Tower
-  (the "moderate overlap" pairing from earlier) without itself feeding
-  anything downstream.
+  Super-Magnetic Ring) — the sub-component chain
 - **Satellite Substation** shares its **Frame Material** input with
   **Artificial Star** (+ Quantum Chip, Titanium Alloy, Annihilation Constraint
-  Sphere), **Vertical Launching Silo** (+ Quantum Chip, Titanium Alloy,
-  Graviton Lens), and now **Advanced Mining Machine** (+ Quantum Chip,
-  Titanium Alloy, Super-Magnetic Ring, Grating Crystal) — all four share the
-  Frame Material + Titanium Alloy + Quantum Chip core (Advanced Mining Machine
-  additionally ties back to Satellite Substation via Super-Magnetic Ring)
+  Sphere), **Advanced Mining Machine** (+ Quantum Chip, Titanium Alloy,
+  Super-Magnetic Ring, Grating Crystal), and **Vertical Launching Silo**
+  (+ Quantum Chip, Titanium Alloy, Graviton Lens) — Advanced Mining Machine
+  additionally ties back to Satellite Substation via Super-Magnetic Ring
 
-Practical layout: run Wind Turbine and the Tesla Tower → Wireless Power Tower
-→ Satellite Substation sub-chain first, then continue the Frame Material belt
-past Satellite Substation down to Artificial Star, Vertical Launching Silo,
-and Advanced Mining Machine, picking up Quantum Chip and Titanium Alloy spurs
-(plus Super-Magnetic Ring for Advanced Mining Machine) for those last three.
+Practical layout: run the Tesla Tower → Wireless Power Tower → Satellite
+Substation sub-chain first, then continue the Frame Material belt past
+Satellite Substation down to Artificial Star, Advanced Mining Machine, and
+Vertical Launching Silo, picking up Quantum Chip + Titanium Alloy spurs (plus
+Super-Magnetic Ring for Advanced Mining Machine, Graviton Lens for Vertical
+Launching Silo) for those last three.
 
-Factoriolab planner below covers the original 5-item version of this group
-(Tesla Tower, Wireless Power Tower, Satellite Substation, Artificial Star,
-Vertical Launching Silo) — it predates the Wind Turbine swap and Advanced
-Mining Machine addition above, so treat it as reference for the Tesla Tower
-sub-chain rather than the full current group:
+Factoriolab planner (covers Tesla Tower, Wireless Power Tower, Satellite
+Substation, Artificial Star, Vertical Launching Silo — predates the Advanced
+Mining Machine addition, kept for the Tesla Tower sub-chain reference):
 https://factoriolab.github.io/dsp/list?z=eJwlxbEKwjAUBdC.ecMdJFnc7vICFiSIIoLdzRBqbEmpZHrfLo3LOTM1wjuZ-fmnThJx3hmkUu-Ak8rbXmGAl8Kxm7uxu3YXeMmpUQ9SU-MVI16YsKHhCL1AH9AndDJ9I5wsDFJK5WqLZYvypfc.dVUncw__&v=11
+
+### 🔒 LOCKED Group 3: Matrix Lab, Self-evolution Lab, Negentropy Smelter, Re-composing Assembler
+
+Locked 2026-08-12. Anchored on Quantum Chip (Self-evolution Lab, Negentropy
+Smelter, and Re-composing Assembler all consume it directly) plus the
+Matrix Lab → Self-evolution Lab sub-component chain.
+
+Ingredient logic (for reference — group composition itself is locked, not this reasoning):
+- **Matrix Lab** (Iron Ingot + Circuit Board + Glass + Magnetic Coil) → feeds
+  **Self-evolution Lab** (+ Silicon-Based Neuron, Dark Fog Matrix, Quantum Chip)
+  — sub-component chain
+- **Negentropy Smelter** (Plane Smelter + Negentropy Singularity + Energy
+  Shard + Quantum Chip) shares Quantum Chip with Self-evolution Lab and
+  Re-composing Assembler, and shares Energy Shard with Re-composing Assembler
+- **Re-composing Assembler** (Assembling Machine Mk.III [built inline, not a
+  tracked output — see note above] + Matter Recombinator + Energy Shard +
+  Quantum Chip)
+
+Practical layout: run Iron Ingot + Circuit Board + Glass + Magnetic Coil into
+Matrix Lab first, tap its output into Self-evolution Lab alongside Silicon-
+Based Neuron and Dark Fog Matrix spurs. Route a shared Quantum Chip belt past
+Self-evolution Lab, Negentropy Smelter, and Re-composing Assembler; route a
+shared Energy Shard belt past Negentropy Smelter and Re-composing Assembler.
+Negentropy Smelter and Re-composing Assembler still draw Plane Smelter and
+Assembling Machine Mk.III respectively from their own tier-chain rows.
+
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJw1iLEOgjAURf.mDXcw1KjbW14TUINRY0yAUSBatYEUNUz9dkOryzn33I7TBsuEOk4rqCSMOoyWsZ2QkWM5AQk5PkZVUVIDihzrIrY-RKe3X69.fY3eRP3fZrJlDUWWy0ATmAcOgT0UmXZkmZG5tKzJDC9ekGtH3qPwJRo88MaIFWQHOUMKSA25Q56QOXTqdUbWOh58743PyfYDZ.Rhpb6dk0NT&v=11
+
+Note: Quantum Chemical Plant, previously considered for this group, stays
+out — it remains in the tentative Strange Matter Line group below instead.
+
+### 🧪 TENTATIVE Group: Strange Matter Line (not locked)
+**Quantum Chemical Plant, Destroyer, Gravity Missile Set, Interstellar Logistics Vessel, Corvette.**
+
+Anchored on Strange Matter (Quantum Chemical Plant, Destroyer, Gravity Missile
+Set all use it), extended with Interstellar Logistics Vessel and Corvette
+since both bridge in via Reinforced Thruster + Processor overlap with
+Destroyer. Gravity Missile Set itself doesn't share anything beyond Strange
+Matter with the rest of the group — it's along for the ride on that one
+ingredient.
+
+**Next up:** the Quantum Chip group is now locked as 🔒 Group 3 (2026-08-12,
+see above). Once Strange Matter Line is finalized, pick up the remaining
+**Frame Material** group (Plane Smelter, Miniature Particle Collider,
+Destroyer, Orbital Collector) — will need to drop Destroyer if it's still in
+Strange Matter Line at that point.
 
 ### Practical takeaway
 The three **identical-set pairs** are the easy wins — build them as literally the
