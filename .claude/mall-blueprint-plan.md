@@ -10,8 +10,6 @@ Full ingredient breakdowns are listed under each item below.
 ## Target item list
 
 ### Power
-- Wind Turbine
-  - 6x Iron Ingot + 3x Magnetic Coil + 1x Gear → 1x Wind Turbine (Assembler)
 - Ray Receiver
   - 20x Super-Magnetic Ring + 10x Photon Combiner + 5x Processor + 20x High-Purity Silicon + 20x Steel → 1x Ray Receiver (Assembler)
 - Wireless Power Tower
@@ -31,21 +29,15 @@ Full ingredient breakdowns are listed under each item below.
 - Water Pump
   - 2x Circuit Board + 4x Electric Motor + 8x Iron Ingot + 4x Stone Brick → 1x Water Pump (Assembler)
 - Orbital Collector
-  - 1x Interstellar Logistics Station + 20x Frame Material + 10x Photon Combiner + 10x Reinforced Thruster → 1x Orbital Collector (Assembler, 6s)
+  - 1x Interstellar Logistics Station + 10x Photon Combiner + 10x Reinforced Thruster → 1x Orbital Collector (Assembler, 6s)
 
 ### Logistics
-- Conveyor Belt Mk.I
-  - 2x Iron Ingot + 1x Gear → 1x Conveyor Belt Mk.I (Assembler)
-- Conveyor Belt Mk.II
-  - 3x Conveyor Belt Mk.I + 1x Electromagnetic Turbine → 1x Conveyor Belt Mk.II (Assembler)
 - Conveyor Belt Mk.III
+  - Internal precursors (not tracked mall outputs, removed 2026-08-12): 2x Iron Ingot + 1x Gear → 1x Conveyor Belt Mk.I; 3x Conveyor Belt Mk.I + 1x Electromagnetic Turbine → 1x Conveyor Belt Mk.II
   - 3x Conveyor Belt Mk.II + 1x Graphene + 1x Super-Magnetic Ring → 1x Conveyor Belt Mk.III (Assembler)
-- Sorter Mk.I
-  - 1x Circuit Board + 1x Iron Ingot → 1x Sorter Mk.I (Assembler)
-- Sorter Mk.II
-  - 1x Electric Motor + 2x Sorter Mk.I → 1x Sorter Mk.II (Assembler)
-- Sorter Mk.III
-  - 2x Sorter Mk.II + 1x Electromagnetic Turbine → 1x Sorter Mk.III (Assembler)
+- Pile Sorter
+  - Internal precursors (not tracked mall outputs, removed 2026-08-12): 1x Circuit Board + 1x Iron Ingot → 1x Sorter Mk.I; 1x Electric Motor + 2x Sorter Mk.I → 1x Sorter Mk.II; 2x Sorter Mk.II + 1x Electromagnetic Turbine → 1x Sorter Mk.III
+  - 2x Sorter Mk.III + 1x Processor + 1x Super-Magnetic Ring → 1x Pile Sorter (Assembler)
 - Splitter
   - 1x Circuit Board + 2x Gear + 3x Iron Ingot → 1x Splitter (Assembler)
 - Spray Coater
@@ -69,21 +61,14 @@ Full ingredient breakdowns are listed under each item below.
   - Mk.II: 8x Steel + 8x Stone Brick → 1x Storage Mk.II (Assembler)
 
 ### Production
-- Arc Smelter
-  - 4x Iron Ingot + 2x Stone Brick + 4x Circuit Board + 2x Magnetic Coil → 1x Arc Smelter (Assembler)
-- Plane Smelter
-  - 1x Arc Smelter + 5x Frame Material + 4x Plane Filter + 15x Unipolar Magnet → 1x Plane Smelter (Assembler)
 - Negentropy Smelter
+  - Internal precursors (not tracked mall outputs, removed 2026-08-13): 4x Iron Ingot + 2x Stone Brick + 4x Circuit Board + 2x Magnetic Coil → 1x Arc Smelter; 1x Arc Smelter + 5x Frame Material + 4x Plane Filter + 15x Unipolar Magnet → 1x Plane Smelter
   - 1x Plane Smelter + 10x Negentropy Singularity + 30x Energy Shard + 4x Quantum Chip → 1x Negentropy Smelter (Assembler, 6s)
-- Assembling Machine Mk.I / II
-  - Mk.I: 4x Iron Ingot + 8x Gear + 4x Circuit Board → 1x Assembling Machine Mk.I (Assembler)
-  - Mk.II: 1x Assembling Machine Mk.I + 8x Graphene + 4x Processor → 1x Assembling Machine Mk.II (Assembler)
 - Re-composing Assembler
-  - Internal precursor (not a tracked mall output): 1x Assembling Machine Mk.II + 8x Particle Broadband + 2x Quantum Chip → 1x Assembling Machine Mk.III (Assembler)
+  - Internal precursors (not tracked mall outputs): 4x Iron Ingot + 8x Gear + 4x Circuit Board → 1x Assembling Machine Mk.I (removed 2026-08-13); 1x Assembling Machine Mk.I + 8x Graphene + 4x Processor → 1x Assembling Machine Mk.II; 1x Assembling Machine Mk.II + 8x Particle Broadband + 2x Quantum Chip → 1x Assembling Machine Mk.III
   - 1x Assembling Machine Mk.III + 10x Matter Recombinator + 30x Energy Shard + 4x Quantum Chip → 1x Re-composing Assembler (Assembler, 5s)
-- Chemical Plant
-  - 2x Circuit Board + 8x Glass + 8x Steel + 8x Stone Brick → 1x Chemical Plant (Assembler)
 - Quantum Chemical Plant
+  - Internal precursor (not a tracked mall output, removed 2026-08-13): 2x Circuit Board + 8x Glass + 8x Steel + 8x Stone Brick → 1x Chemical Plant
   - 1x Chemical Plant + 10x Titanium Glass + 3x Strange Matter + 3x Quantum Chip → 1x Quantum Chemical Plant (Assembler, 10s)
 - Oil Refinery
   - 6x Circuit Board + 6x Plasma Exciter + 10x Steel + 10x Stone Brick → 1x Oil Refinery (Assembler)
@@ -118,15 +103,15 @@ Full ingredient breakdowns are listed under each item below.
 
 ### Fleet / Combat
 - Attack Drone
+  - Internal precursor (not a tracked mall output, removed 2026-08-13; shared with Precision Drone below): 3x Iron Ingot + 1x Engine + 2x Circuit Board + 1x Plasma Exciter → 1x Prototype
   - 1x Prototype + 1x Electromagnetic Turbine + 1x Processor + 1x Particle Container → 1x Attack Drone (Assembler, 4s)
 - Precision Drone
+  - Uses the same inline Prototype precursor as Attack Drone above.
   - 1x Prototype + 1x Electromagnetic Turbine + 2x Circuit Board + 2x Photon Combiner → 1x Precision Drone (Assembler, 4s)
 - Corvette
   - 5x Titanium Alloy + 1x Reinforced Thruster + 2x Processor + 3x Particle Container → 1x Corvette (Assembler, 5s)
 - Destroyer
   - 20x Frame Material + 4x Reinforced Thruster + 4x Processor + 1x Strange Matter → 1x Destroyer (Assembler, 8s)
-- Prototype
-  - 3x Iron Ingot + 1x Engine + 2x Circuit Board + 1x Plasma Exciter → 1x Prototype (Assembler, 2s)
 - Gravity Missile Set
   - 3x Supersonic Missile Set + 6x Crystal Explosive Unit + 3x Strange Matter → 3x Gravity Missile Set (Assembler, 6s)
 - Antimatter Capsule
@@ -147,14 +132,14 @@ drones/bots/satellite substations etc. need much higher throughput than
 one-off items like ILS.
 
 ### Tier-chain groups (locked — each tier requires the previous as an ingredient)
-1. **Belt line** — Conveyor Belt Mk.I (High), Mk.II (High), Mk.III (High)
-2. **Sorter line** — Sorter Mk.I (High), Mk.II (High), Mk.III (High)
-3. **Assembler line** — Assembling Machine Mk.I (High), Mk.II (High), Re-composing Assembler (High) — Mk.III is built inline as Re-composing Assembler's precursor, no longer tracked as its own mall output
-4. **Smelter line** — Arc Smelter (High), Plane Smelter (High), Negentropy Smelter (High)
+1. **Belt line** — Conveyor Belt Mk.III (High) — Mk.I/Mk.II removed from tracking 2026-08-12, still built inline as Mk.III's precursors
+2. **Sorter line** — Pile Sorter (High) — Sorter Mk.I/II/III removed from tracking 2026-08-12, still built inline as Pile Sorter's precursors
+3. **Assembler line** — Re-composing Assembler (High) — Mk.I, Mk.II, and Mk.III are all now built inline as Re-composing Assembler's precursors (Mk.I removed from tracking 2026-08-13), none tracked as their own mall outputs anymore. This tier-chain row is now fully absorbed into 🔒 Group 3.
+4. **Smelter line** — Negentropy Smelter (High) — Arc Smelter and Plane Smelter are both now built inline as Negentropy Smelter's precursors (removed from tracking 2026-08-13). This tier-chain row is now fully absorbed into 🔒 Group 3.
 
 ### Ingredient-cluster groups
 5. **Wireless power chain** (shares Tesla Tower as sub-component) — Tesla Tower (Med), Wireless Power Tower (Med), Satellite Substation (High), Signal Tower (Low)
-6. **Magnetic Coil / Matrix Lab line** — Wind Turbine (Med), Matrix Lab (Med), Self-evolution Lab (Low)
+6. **Magnetic Coil / Matrix Lab line** — Matrix Lab (Med), Self-evolution Lab (Low) — stale row, superseded by 🔒 Group 3; Wind Turbine dropped from mall 2026-08-12
 7. **Endgame Titanium+Frame Material+Quantum Chip** — Advanced Mining Machine (Low-Med), Vertical Launching Silo (Low), Artificial Star (Low)
 8. **Titanium+Super-Magnetic Ring+Processor** — Miniature Particle Collider (Low), Plasma Turret (Med)
 9. **Basic extractors** — Oil Extractor (Low-Med), Water Pump (Low-Med)
@@ -165,7 +150,7 @@ one-off items like ILS.
 
 14. **Particle Container / PLS chain** — PLS (Low), ILS (Low), Antimatter Capsule (Low)
 15. **Thruster fleet** — Logistics Drone (High), Interstellar Logistics Vessel (Low), Corvette (Low-Med), Destroyer (Low)
-16. **Engine cluster** — Logistics Bot (High), Missile Turret (Med), Battlefield Analysis Base (Low), Prototype (Med)
+16. **Engine cluster** — Logistics Bot (High), Missile Turret (Med), Battlefield Analysis Base (Low) — stale row; Prototype removed from tracking 2026-08-13
 17. **Electromagnetic Turbine cluster** — Attack Drone (High), Precision Drone (Med), Planetary Shield Generator (Low)
 18. **Photon Combiner** — Ray Receiver (Low-Med), Laser Turret (Med)
 19. **Strange Matter** — Quantum Chemical Plant (Low), Gravity Missile Set (Med)
@@ -180,19 +165,19 @@ splitter off into every assembler listed under it.
 
 ### Tier 1 — Core feeders (8+ items share these; build dedicated belts)
 
-**Circuit Board** (16 items) — Oil Extractor 6x, Water Pump 2x, Sorter Mk.I 1x, Splitter 1x, Spray Coater 2x, Arc Smelter 4x, Assembling Machine Mk.I 4x, Chemical Plant 2x, Oil Refinery 6x, Matrix Lab 4x, Missile Turret 12x, Laser Turret 6x, Battlefield Analysis Base 18x, Precision Drone 2x, Prototype 2x, Holo Beacon 2x
+**Circuit Board** (15 items, incl. 4 untracked intermediates) — Oil Extractor 6x, Water Pump 2x, Splitter 1x, Spray Coater 2x, Arc Smelter 4x (untracked, built inline for Negentropy Smelter), Assembling Machine Mk.I 4x (untracked, built inline for Re-composing Assembler), Chemical Plant 2x (untracked, built inline for Quantum Chemical Plant), Oil Refinery 6x, Matrix Lab 4x, Missile Turret 12x, Laser Turret 6x, Battlefield Analysis Base 18x, Precision Drone 2x, Prototype 2x (untracked, built inline for Attack Drone/Precision Drone), Holo Beacon 2x
 
-**Iron Ingot** (15 items) — Wind Turbine 6x, Tesla Tower 2x, Water Pump 8x, Conveyor Belt Mk.I 2x, Sorter Mk.I 1x, Splitter 3x, Logistics Distributor 8x, Logistics Bot 2x, Logistics Drone 5x, Storage Mk.I 4x, Arc Smelter 4x, Assembling Machine Mk.I 4x, Matrix Lab 8x, Prototype 3x, Holo Beacon 3x
+**Iron Ingot** (12 items, incl. 3 untracked intermediates) — Tesla Tower 2x, Water Pump 8x, Splitter 3x, Logistics Distributor 8x, Logistics Bot 2x, Logistics Drone 5x, Storage Mk.I 4x, Arc Smelter 4x (untracked, built inline for Negentropy Smelter), Assembling Machine Mk.I 4x (untracked, built inline for Re-composing Assembler), Matrix Lab 8x, Prototype 3x (untracked, built inline for Attack Drone/Precision Drone), Holo Beacon 3x
 
-**Steel** (15 items) — Ray Receiver 20x, Oil Extractor 12x, Spray Coater 4x, PLS 40x, Storage Mk.II 8x, Chemical Plant 8x, Oil Refinery 10x, Fractionator 8x, EM-Rail Ejector 20x, Laser Turret 9x, Missile Turret 8x, Signal Tower 12x, Planetary Shield Generator 20x, Battlefield Analysis Base 12x, Foundation 1x
+**Steel** (15 items, incl. 1 untracked intermediate) — Ray Receiver 20x, Oil Extractor 12x, Spray Coater 4x, PLS 40x, Storage Mk.II 8x, Chemical Plant 8x (untracked, built inline for Quantum Chemical Plant), Oil Refinery 10x, Fractionator 8x, EM-Rail Ejector 20x, Laser Turret 9x, Missile Turret 8x, Signal Tower 12x, Planetary Shield Generator 20x, Battlefield Analysis Base 12x, Foundation 1x
 
-**Processor** (14 items) — Ray Receiver 5x, Logistics Distributor 4x, PLS 40x, Logistics Bot 1x, Logistics Drone 2x, Interstellar Logistics Vessel 10x, Assembling Machine Mk.II 4x, Fractionator 1x, Miniature Particle Collider 8x, EM-Rail Ejector 5x, Plasma Turret 5x, Attack Drone 1x, Corvette 2x, Destroyer 4x
+**Processor** (14 items, incl. 1 untracked intermediate) — Ray Receiver 5x, Logistics Distributor 4x, PLS 40x, Logistics Bot 1x, Logistics Drone 2x, Interstellar Logistics Vessel 10x, Assembling Machine Mk.II 4x (untracked, built inline for Re-composing Assembler), Fractionator 1x, Miniature Particle Collider 8x, EM-Rail Ejector 5x, Plasma Turret 5x, Attack Drone 1x, Corvette 2x, Destroyer 4x
 
-**Stone Brick** (9 items) — Oil Extractor 12x, Water Pump 4x, Storage Mk.I 4x, Storage Mk.II 8x, Arc Smelter 2x, Chemical Plant 8x, Oil Refinery 10x, Fractionator 4x, Foundation 3x
+**Stone Brick** (9 items, incl. 2 untracked intermediates) — Oil Extractor 12x, Water Pump 4x, Storage Mk.I 4x, Storage Mk.II 8x, Arc Smelter 2x (untracked, built inline for Negentropy Smelter), Chemical Plant 8x (untracked, built inline for Quantum Chemical Plant), Oil Refinery 10x, Fractionator 4x, Foundation 3x
 
-**Plasma Exciter** (9 items) — Wireless Power Tower 3x, Oil Extractor 4x, Spray Coater 2x, Logistics Distributor 4x, Oil Refinery 6x, Plasma Turret 5x, Laser Turret 6x, Prototype 1x, Holo Beacon 2x
+**Plasma Exciter** (9 items, incl. 1 untracked intermediate) — Wireless Power Tower 3x, Oil Extractor 4x, Spray Coater 2x, Logistics Distributor 4x, Oil Refinery 6x, Plasma Turret 5x, Laser Turret 6x, Prototype 1x (untracked, built inline for Attack Drone/Precision Drone), Holo Beacon 2x
 
-**Super-Magnetic Ring** (8 items) — Ray Receiver 20x, Satellite Substation 10x, Advanced Mining Machine 10x, Conveyor Belt Mk.III 1x, Miniature Particle Collider 50x, EM-Rail Ejector 10x, Plasma Turret 10x, Planetary Shield Generator 5x
+**Super-Magnetic Ring** (9 items) — Ray Receiver 20x, Satellite Substation 10x, Advanced Mining Machine 10x, Conveyor Belt Mk.III 1x, Pile Sorter 1x, Miniature Particle Collider 50x, EM-Rail Ejector 10x, Plasma Turret 10x, Planetary Shield Generator 5x
 
 **Titanium Alloy** (8 items) — Artificial Star 20x, Advanced Mining Machine 20x, ILS 40x, Interstellar Logistics Vessel 10x, Miniature Particle Collider 20x, Vertical Launching Silo 80x, Plasma Turret 20x, Corvette 5x
 
@@ -200,23 +185,23 @@ splitter off into every assembler listed under it.
 
 ### Tier 2 — Secondary feeders (4–7 items)
 
-**Frame Material** (8) — Satellite Substation 2x, Artificial Star 20x, Advanced Mining Machine 10x, Plane Smelter 5x, Miniature Particle Collider 20x, Vertical Launching Silo 30x, Destroyer 20x, Orbital Collector 20x
+**Frame Material** (7) — Satellite Substation 2x, Artificial Star 20x, Advanced Mining Machine 10x, Plane Smelter 5x, Miniature Particle Collider 20x, Vertical Launching Silo 30x, Destroyer 20x
 
 **Particle Container** (6) — PLS 20x, ILS 20x, Planetary Shield Generator 5x, Attack Drone 1x, Corvette 3x, Antimatter Capsule 1x
 
-**Gear** (5) — Wind Turbine 1x, Conveyor Belt Mk.I 1x, Splitter 2x, Assembling Machine Mk.I 8x, EM-Rail Ejector 20x
+**Gear** (3, incl. 1 untracked intermediate) — Splitter 2x, Assembling Machine Mk.I 8x (untracked, built inline for Re-composing Assembler), EM-Rail Ejector 20x
 
-**Electromagnetic Turbine** (5) — Conveyor Belt Mk.II 1x, Sorter Mk.III 1x, Planetary Shield Generator 20x, Attack Drone 1x, Precision Drone 1x
+**Electromagnetic Turbine** (3) — Planetary Shield Generator 20x, Attack Drone 1x, Precision Drone 1x
 
-**Magnetic Coil** (4) — Wind Turbine 3x, Tesla Tower 1x, Arc Smelter 2x, Matrix Lab 4x
+**Magnetic Coil** (3, incl. 1 untracked intermediate) — Tesla Tower 1x, Arc Smelter 2x (untracked, built inline for Negentropy Smelter), Matrix Lab 4x
 
-**Engine** (4) — Logistics Bot 1x, Missile Turret 6x, Battlefield Analysis Base 12x, Prototype 1x
+**Engine** (4, incl. 1 untracked intermediate) — Logistics Bot 1x, Missile Turret 6x, Battlefield Analysis Base 12x, Prototype 1x (untracked, built inline for Attack Drone/Precision Drone)
 
 ### Tier 3 — Minor shared ingredients (2–3 items; only worth a shared belt if those items sit near each other anyway)
 
-- **Glass** (3) — Chemical Plant 8x, Fractionator 4x, Matrix Lab 4x
-- **Electric Motor** (3) — Water Pump 4x, Sorter Mk.II 1x, Missile Turret 6x
-- **Graphene** (3) — Conveyor Belt Mk.III 1x, Assembling Machine Mk.II 8x, Miniature Particle Collider 10x
+- **Glass** (3, incl. 1 untracked intermediate) — Chemical Plant 8x (untracked, built inline for Quantum Chemical Plant), Fractionator 4x, Matrix Lab 4x
+- **Electric Motor** (2) — Water Pump 4x, Missile Turret 6x
+- **Graphene** (3, incl. 1 untracked intermediate) — Conveyor Belt Mk.III 1x, Assembling Machine Mk.II 8x (untracked, built inline for Re-composing Assembler), Miniature Particle Collider 10x
 - **Photon Combiner** (4) — Ray Receiver 10x, Laser Turret 9x, Precision Drone 2x, Orbital Collector 10x
 - **Reinforced Thruster** (4) — Interstellar Logistics Vessel 2x, Corvette 1x, Destroyer 4x, Orbital Collector 10x
 - **Strange Matter** (3) — Quantum Chemical Plant 3x, Destroyer 1x, Gravity Missile Set 3x
@@ -232,13 +217,16 @@ High-Purity Silicon (Ray Receiver), Grating Crystal (Advanced Mining Machine), T
 
 ### Note on the tier-chains (Belt/Sorter/Assembler/Smelter Mk.I→III)
 
-These aren't ingredient-sharing groups — each tier consumes the previous tier as
-its own ingredient, so they're a strict sequential line, not something that
-merges with the Tier 1/2 feeders above. Keep them as their own 4 rows on the
-floor plan (as in the old Production Groups list), but note they still draw
-Iron Ingot / Circuit Board / Steel / Processor / Gear from the Tier 1/2 belts
-for their *other* inputs (e.g. Assembling Machine Mk.I also needs Iron Ingot +
-Circuit Board directly, on top of consuming Mk.I → Mk.II → Mk.III up the chain).
+Updated 2026-08-13: the Assembler chain (Mk.I→II→III) and Smelter chain (Arc
+Smelter→Plane Smelter) are now **fully absorbed into 🔒 Group 3** as inline
+precursors of Re-composing Assembler and Negentropy Smelter respectively —
+none of their stages are tracked mall outputs anymore, so they no longer get
+their own floor-plan rows. Only the Belt chain (→ Conveyor Belt Mk.III, in
+🔒 Group 4) and Sorter chain (→ Pile Sorter, also in 🔒 Group 4) still work
+this way. Each chain's intermediate stages still draw their *other* inputs
+(Iron Ingot, Circuit Board, Steel, Processor, Gear, etc.) from the Tier 1/2
+feeder belts as before — that part is unchanged, just now happening inside
+Group 3/4's footprint rather than a separate standalone row.
 
 ## Recipe-Overlap Clusters (what you actually asked for — items grouped by shared FULL ingredient sets)
 
@@ -251,18 +239,18 @@ two extra spurs per item. Ranked by overlap strength.
 ### Identical ingredient sets (same inputs, different quantities — build side-by-side, same belts, zero extra spurs)
 - **Storage Mk.II + Foundation** — both just Steel + Stone Brick
 - **Oil Extractor + Oil Refinery** — both Circuit Board + Plasma Exciter + Steel + Stone Brick
-- **Splitter + Assembling Machine Mk.I** — both Iron Ingot + Gear + Circuit Board
+- ~~Splitter + Assembling Machine Mk.I~~ — moot: Assembling Machine Mk.I removed from tracking 2026-08-13 (now built inline in 🔒 Group 3). Splitter has no remaining shared-belt partner from this pairing.
 
 ### Strong overlap (3 of 4 ingredients shared — one extra spur per item)
-- **Iron Ingot + Magnetic Coil + Circuit Board core** — Arc Smelter (+Stone Brick). (Matrix Lab moved to 🔒 LOCKED Group 3 on 2026-08-12; no longer paired here. Arc Smelter is still built regardless as part of the Smelter tier-chain, just without a shared-belt companion now.)
+- ~~Iron Ingot + Magnetic Coil + Circuit Board core — Arc Smelter~~ — moot: Arc Smelter removed from tracking 2026-08-13 (now built inline in 🔒 Group 3, feeding Negentropy Smelter). Matrix Lab (the other former member of this cluster) is also already in 🔒 Group 3.
 - **Steel + Circuit Board + Engine core** — Missile Turret (+Electric Motor), Battlefield Analysis Base (+Microcrystalline Component)
 - **Steel + Circuit Board + Plasma Exciter core** — Laser Turret (+Photon Combiner), Spray Coater (+Microcrystalline Component)
-- **Iron Ingot + Circuit Board + Plasma Exciter core** — Prototype (+Engine), Holo Beacon (+Prism)
+- ~~Iron Ingot + Circuit Board + Plasma Exciter core — Prototype, Holo Beacon~~ — moot: Prototype removed from tracking 2026-08-13 (now built inline, shared precursor for Attack Drone/Precision Drone in 🧪 Group 5). Holo Beacon has no remaining shared-belt partner from this pairing.
 - **Titanium Alloy + Processor + Reinforced Thruster core** — Interstellar Logistics Vessel (exact subset, no extra), Corvette (+Particle Container)
-- **Steel + Glass + Stone Brick core** — Chemical Plant (+Circuit Board), Fractionator (+Processor)
+- ~~Steel + Glass + Stone Brick core — Chemical Plant, Fractionator~~ — moot: Chemical Plant removed from tracking 2026-08-13 (now built inline for Quantum Chemical Plant, in the tentative Strange Matter Line group). Fractionator has no remaining shared-belt partner from this pairing.
 
 ### Moderate overlap (2 shared ingredients — worth co-locating, 2 extra spurs per item)
-- **Iron Ingot + Magnetic Coil base** — Tesla Tower (exact, no extra), Wind Turbine (+Gear) — Tesla Tower's whole recipe is a subset of Wind Turbine's
+- ~~Iron Ingot + Magnetic Coil base — Tesla Tower, Wind Turbine~~ — moot: Tesla Tower is locked in Group 1, Wind Turbine dropped from the mall entirely 2026-08-12
 - **Prototype + Electromagnetic Turbine base** — Attack Drone (+Processor, +Particle Container), Precision Drone (+Circuit Board, +Photon Combiner)
 - **Frame Material + Titanium Alloy + Quantum Chip base** — Artificial Star (+Annihilation Constraint Sphere), Vertical Launching Silo (+Graviton Lens), Advanced Mining Machine (+Super-Magnetic Ring, +Grating Crystal)
 - **Super-Magnetic Ring + Titanium Alloy + Processor base** — Miniature Particle Collider (+Frame Material, +Graphene), Plasma Turret (+Plasma Exciter, +Titanium Glass)
@@ -274,10 +262,18 @@ two extra spurs per item. Ranked by overlap strength.
 - **Prototype chain** — Prototype → feeds both Attack Drone and Precision Drone (this is why the "Prototype + Electromagnetic Turbine" cluster above works: build Prototype once, split it into both drones)
 - **PLS → ILS → Orbital Collector chain** — PLS feeds ILS directly, and ILS is itself a direct ingredient of Orbital Collector (1x ILS per Orbital Collector). So this is a 3-deep chain: build PLS, tap it into ILS, and tap ILS again into Orbital Collector.
 
-### No meaningful overlap with anything else (recipe is too unique to cluster — build as standalone spurs)
-Ray Receiver, Water Pump, Logistics Distributor, Logistics Bot, Logistics Drone, Storage Mk.I, EM-Rail Ejector, Quantum Chemical Plant, Plane Smelter, Antimatter Capsule, Gravity Missile Set, Destroyer
+### No meaningful overlap with anything else — SUPERSEDED 2026-08-13
+As of 2026-08-13 every tracked item has been placed into a locked or
+tentative group (see the group sections below), so this "leftover" list no
+longer applies. Kept only as historical record: this section originally
+listed Water Pump, Logistics Bot, Logistics Drone, Storage Mk.I, Quantum
+Chemical Plant, Antimatter Capsule, Gravity Missile Set, and Destroyer as
+having no meaningful overlap. Since then: Water Pump → 🧪 Group 7,
+Logistics Bot → 🧪 Group 8, Logistics Drone → 🧪 Group 9, Storage Mk.I →
+🧪 Group 7, Quantum Chemical Plant/Gravity Missile Set/Destroyer → 🧪 Group 2
+(Strange Matter Line), Antimatter Capsule → 🧪 Group 5.
 
-### 🔒 LOCKED Group: Power & Energy Line
+### 🔒 LOCKED Group 1: Power & Energy Line
 **Tesla Tower, Satellite Substation, Wireless Power Tower, Advanced Mining Machine, Artificial Star, Vertical Launching Silo.**
 
 Locked 2026-08-09, corrected same day to add Vertical Launching Silo back in
@@ -335,15 +331,18 @@ Matrix Lab first, tap its output into Self-evolution Lab alongside Silicon-
 Based Neuron and Dark Fog Matrix spurs. Route a shared Quantum Chip belt past
 Self-evolution Lab, Negentropy Smelter, and Re-composing Assembler; route a
 shared Energy Shard belt past Negentropy Smelter and Re-composing Assembler.
-Negentropy Smelter and Re-composing Assembler still draw Plane Smelter and
-Assembling Machine Mk.III respectively from their own tier-chain rows.
+Negentropy Smelter and Re-composing Assembler each build their full precursor
+chains inline (Arc Smelter → Plane Smelter → Negentropy Smelter; Assembling
+Machine Mk.I → Mk.II → Mk.III → Re-composing Assembler) — none of those
+precursor stages are tracked as their own mall outputs anymore (updated
+2026-08-13).
 
 Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJw1iLEOgjAURf.mDXcw1KjbW14TUINRY0yAUSBatYEUNUz9dkOryzn33I7TBsuEOk4rqCSMOoyWsZ2QkWM5AQk5PkZVUVIDihzrIrY-RKe3X69.fY3eRP3fZrJlDUWWy0ATmAcOgT0UmXZkmZG5tKzJDC9ekGtH3qPwJRo88MaIFWQHOUMKSA25Q56QOXTqdUbWOh58743PyfYDZ.Rhpb6dk0NT&v=11
 
 Note: Quantum Chemical Plant, previously considered for this group, stays
 out — it remains in the tentative Strange Matter Line group below instead.
 
-### 🧪 TENTATIVE Group: Strange Matter Line (not locked)
+### 🧪 TENTATIVE Group 2: Strange Matter Line (not locked)
 **Quantum Chemical Plant, Destroyer, Gravity Missile Set, Interstellar Logistics Vessel, Corvette.**
 
 Anchored on Strange Matter (Quantum Chemical Plant, Destroyer, Gravity Missile
@@ -354,10 +353,84 @@ Matter with the rest of the group — it's along for the ride on that one
 ingredient.
 
 **Next up:** the Quantum Chip group is now locked as 🔒 Group 3 (2026-08-12,
-see above). Once Strange Matter Line is finalized, pick up the remaining
-**Frame Material** group (Plane Smelter, Miniature Particle Collider,
-Destroyer, Orbital Collector) — will need to drop Destroyer if it's still in
-Strange Matter Line at that point.
+see above). The Frame Material group is now empty — its last member,
+Miniature Particle Collider, moved into the 🧪 Super-Magnetic Ring /
+Processor Cluster below (2026-08-13). Plane Smelter removed 2026-08-12
+(handled as Group 3's Negentropy Smelter tier-chain precursor); Orbital
+Collector removed 2026-08-12 (recipe corrected — no Frame Material). Once
+Strange Matter Line finalizes, no queued group remains — revisit the
+remaining ungrouped items list fresh.
+
+### 🔒 LOCKED Group 4: Super-Magnetic Ring / Processor Cluster
+**Conveyor Belt Mk.III, Pile Sorter, Ray Receiver, Miniature Particle Collider, Logistics Distributor.**
+
+Locked 2026-08-13 (previously an unnumbered/then Group 2 tentative group;
+renumbered to Group 4 and locked — Strange Matter Line above took over the
+Group 2 slot). Anchored on
+Super-Magnetic Ring (Conveyor Belt Mk.III, Pile Sorter, Ray Receiver,
+Miniature Particle Collider all use it directly) plus Processor, which
+extends the group to Logistics Distributor (ties to Pile Sorter, Miniature
+Particle Collider, and Ray Receiver). EM-Rail Ejector, Plasma Turret, and
+Planetary Shield Generator also use Super-Magnetic Ring but were explicitly
+excluded from this group.
+
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwlx7uOwjAUhOG3OcUUKAYWhWKaY4mgVRaBEBAogRQWayVyuKTys6PEzf.NNNzAZHkmDdcnzBbD0ArTXBp-YH6kod0PtyZ-hxQSqHsgk8Bd4pLQG2Ak0Fbp223yL1Em1sfkMpEPeFoY8TyPdWPLsd3YFkZc3VMn4q41rbjuybmEuucWJ5xxxwMv9FhAN9ADtILeoI-o.9Ap7CraQrwP7GIbXSzFtx0LedOYL5cQRDE_&v=11
+
+### 🧪 TENTATIVE Group 5: EM-Rail Ejector, Plasma Turret, Planetary Shield Generator, Attack Drone, Precision Drone, Antimatter Capsule
+
+Numbered 5 per user request (gap before it: Group 4, the Super-Magnetic
+Ring / Processor Cluster above, is now locked; Group 3 is the unrelated
+locked Matrix Lab group — not this one).
+
+Core (EM-Rail Ejector, Plasma Turret, Planetary Shield Generator) anchored on
+Super-Magnetic Ring, extended with:
+- **Attack Drone** — strongest add, shares Electromagnetic Turbine, Processor,
+  AND Particle Container with the core (Electromagnetic Turbine ties to
+  Planetary Shield Generator; Processor ties to EM-Rail Ejector and Plasma
+  Turret; Particle Container ties to Planetary Shield Generator)
+- **Precision Drone** — comes along with Attack Drone via their existing
+  shared Prototype + Electromagnetic Turbine sub-chain (build Prototype once,
+  split into both drones)
+- **Antimatter Capsule** — ties in via Particle Container, shared with
+  Planetary Shield Generator and Attack Drone
+
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwtx8sKwjAQRuG3mcW.EFO16mI2E7AiVRTxuvMSJWhoSVXqJs8ubdycj1OwQW9IBU.OSJLG098vBmnj.e8NSiVkGLMmGXmWNdAlz6vIMSIXQJFnvY-vl9F5JI9Mt9FxZNTgWEOR40Nb2zZvW7UtociamqVD9mxYk61e3Cdval5ihwOueOCNGilkAdlA9pAL5BHkCUmgJ0Fn5JznKpTBhpxcWXFGH1bqB9H4RmU_&v=11
+
+### 🧪 TENTATIVE Group 6: Plasma Exciter + Circuit Board + Steel Cluster
+**Oil Extractor, Oil Refinery, Laser Turret, Spray Coater.**
+
+Oil Extractor and Oil Refinery share an identical ingredient set (Circuit
+Board + Plasma Exciter + Steel + Stone Brick). Laser Turret and Spray Coater
+share the same 3-ingredient core (Circuit Board + Plasma Exciter + Steel),
+each adding one unique item (Photon Combiner / Microcrystalline Component).
+
+### 🧪 TENTATIVE Group 7: Steel + Stone Brick / Iron Ingot Cluster
+**Fractionator, Storage Mk.II, Foundation, Water Pump, Splitter, Storage Mk.I.**
+
+Two merged sub-cores: Storage Mk.II + Foundation are an identical Steel +
+Stone Brick pair, extended by Fractionator (Steel + Stone Brick + Glass +
+Processor). Water Pump, Splitter, and Storage Mk.I are tied together by Iron
+Ingot instead. The two sub-cores don't fully overlap with each other (e.g.
+Water Pump/Splitter don't share Steel or Glass with Fractionator/Storage
+Mk.II/Foundation), so this group will need more individual spurs on the
+floor plan than the tighter groups.
+
+### 🧪 TENTATIVE Group 8: Engine Cluster
+**Missile Turret, Battlefield Analysis Base, Holo Beacon, Logistics Bot, Signal Tower.**
+
+Missile Turret, Battlefield Analysis Base, and Logistics Bot all use Engine
+directly. Missile Turret + Battlefield Analysis Base additionally share
+Steel + Circuit Board (3-of-4-ingredient overlap). Holo Beacon and Signal
+Tower are the loosest fits here — Holo Beacon's original tie was to
+Prototype (now untracked), and Signal Tower has no strong ingredient overlap
+with the rest of this group; both are riding along rather than tightly tied.
+
+### 🧪 TENTATIVE Group 9: Logistics Sub-Chain
+**Planetary Logistics Station (PLS), Interstellar Logistics Station (ILS), Orbital Collector, Logistics Drone.**
+
+Direct production chain: PLS feeds ILS, and ILS is a direct ingredient of
+Orbital Collector — build once, tap twice. Logistics Drone ties in via
+Processor, shared with PLS.
 
 ### Practical takeaway
 The three **identical-set pairs** are the easy wins — build them as literally the
