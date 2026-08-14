@@ -23,15 +23,23 @@ Destination: this repo's root
 
    Robocopy exit codes 0-7 are success (bit flags for copied/extra/mismatched files); only 8+ is a real failure. Check the reported exit code and stop to report the error if it's >= 8.
 
-2. **Stage everything** in the repo. The Bash tool's working directory is already this repo — do not `cd` into it first; prepending `cd` changes the literal command string and breaks the permission allowlist, forcing an approval prompt:
+2. **Generate/update per-blueprint readmes.** Every blueprint `.txt` has its in-game name and long-form description stored as URL-encoded plaintext in its header, before the gzipped/base64 blob — no need to decode the binary to read them. Run the bundled script, which walks the whole repo, decodes each blueprint's header, and writes/updates a `<blueprint name>.readme.md` next to it (skips `.git`/`.claude`; deletes the companion readme if a blueprint's description is empty; leaves files untouched if content is unchanged):
+
+   ```bash
+   node ".claude/skills/sync-blueprints/generate-readmes.js" .
+   ```
+
+   It prints a JSON summary (`created`/`updated`/`deleted`/`unchanged`/`skipped`) — fold these counts into the final report in step 7.
+
+3. **Stage everything** in the repo. The Bash tool's working directory is already this repo — do not `cd` into it first; prepending `cd` changes the literal command string and breaks the permission allowlist, forcing an approval prompt:
 
    ```bash
    git add -A
    ```
 
-3. **Check if there's anything to commit.** If `git diff --cached --stat` is empty, tell the user the repo is already in sync and stop — do not create an empty commit.
+4. **Check if there's anything to commit.** If `git diff --cached --stat` is empty, tell the user the repo is already in sync and stop — do not create an empty commit.
 
-4. **Commit** with a short, factual message (no need to ask the user for wording):
+5. **Commit** with a short, factual message (no need to ask the user for wording):
 
    ```bash
    git commit -m "$(cat <<'EOF'
@@ -42,16 +50,17 @@ Destination: this repo's root
    )"
    ```
 
-5. **Push**:
+6. **Push**:
 
    ```bash
    git push
    ```
 
-6. **Report a brief summary** — counts of files added / modified / deleted (from `git show --stat HEAD` or the staged diff), and confirm the push succeeded. Keep it short; no need to list every filename unless the user asks.
+7. **Report a brief summary** — counts of files added / modified / deleted (from `git show --stat HEAD` or the staged diff), plus the readme created/updated/deleted counts from step 2, and confirm the push succeeded. Keep it short; no need to list every filename unless the user asks.
 
 ## Notes
 
 - Never touch `.git/`, `.claude/`, `.gitignore`, or `*.swp` files — they're excluded from the mirror on both the copy and delete side.
 - Never write anything back into the `Documents\Dyson Sphere Program\Blueprint` folder — sync is one-way.
 - If robocopy or git reports a real error (exit code >= 8 for robocopy, non-zero for git push), stop and surface the error instead of retrying blindly.
+- The `<name>.readme.md` files are fully derived from each blueprint's own header (name + description fields) — they're regenerated every sync, so don't hand-edit them; edit the blueprint's description in-game (or via a direct header patch, see [[dsp_blueprint_editing]]) instead.
