@@ -1,3 +1,4 @@
+<!-- dsp-readme-source-hash: feed88a316579cf3 -->
 # Antimatter Rod Farm (NQ) v3
 
 Requires 145 GW of Dyson Sphere Power at 99% Ray Receiver Efficiency. 10 of these fit on a planet planet.

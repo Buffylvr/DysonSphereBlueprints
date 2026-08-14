@@ -1,3 +1,4 @@
+<!-- dsp-readme-source-hash: ac1810e3eac53dd2 -->
 # Planetary Mall 3 of 10
 
 NEED TO VALIDATE THE REFINED OIL FACTORY STARTS FROM SCRATCH

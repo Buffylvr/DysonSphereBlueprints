@@ -1,3 +1,4 @@
+<!-- dsp-readme-source-hash: 5c29a51bd7e0d720 -->
 # Mall + Antimatter Rods
 
 Used on first planet in antimatter rod system. Needs 600 GW sphere. Uses 28k foundation. Makes strange rods. Includes launchers for sphere.

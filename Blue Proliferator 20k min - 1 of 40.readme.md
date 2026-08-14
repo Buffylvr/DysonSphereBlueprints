@@ -1,3 +1,4 @@
+<!-- dsp-readme-source-hash: ef99301e2daba18a -->
 # Blue Proliferator 20k min - 1 of 40
 
 Imports Coal, Kimberlite Ore and Carbon Nanotubes

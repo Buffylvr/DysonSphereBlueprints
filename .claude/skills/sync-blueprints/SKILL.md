@@ -29,17 +29,19 @@ Destination: this repo's root
    node ".claude/skills/sync-blueprints/generate-readmes.js" .
    ```
 
-   It prints a JSON summary (`created`/`updated`/`deleted`/`unchanged`/`skipped`) — fold these counts into the final report in step 7.
+   It prints a JSON summary (`created`/`updated`/`deleted`/`unchanged`/`skipped`, plus a `needsTranslation` array of readme paths). Fold the counts into the final report in step 7.
 
-3. **Stage everything** in the repo. The Bash tool's working directory is already this repo — do not `cd` into it first; prepending `cd` changes the literal command string and breaks the permission allowlist, forcing an approval prompt:
+3. **Translate non-English readmes.** For every path in `needsTranslation`, read that file and translate its `# name` and description into English (the script itself has no translation ability — this is why it's a separate step, done by you). Keep the file's first line (the `<!-- dsp-readme-source-hash: ... -->` comment) **exactly as written by the script** — don't touch or regenerate it; it's how the script recognizes on future runs that this file's source hasn't changed and skips re-flagging/overwriting your translation. Replace everything after that line with the English translation, same `# name` / blank line / description shape as the English-native readmes.
+
+4. **Stage everything** in the repo. The Bash tool's working directory is already this repo — do not `cd` into it first; prepending `cd` changes the literal command string and breaks the permission allowlist, forcing an approval prompt:
 
    ```bash
    git add -A
    ```
 
-4. **Check if there's anything to commit.** If `git diff --cached --stat` is empty, tell the user the repo is already in sync and stop — do not create an empty commit.
+5. **Check if there's anything to commit.** If `git diff --cached --stat` is empty, tell the user the repo is already in sync and stop — do not create an empty commit.
 
-5. **Commit** with a short, factual message (no need to ask the user for wording):
+6. **Commit** with a short, factual message (no need to ask the user for wording):
 
    ```bash
    git commit -m "$(cat <<'EOF'
@@ -50,13 +52,13 @@ Destination: this repo's root
    )"
    ```
 
-6. **Push**:
+7. **Push**:
 
    ```bash
    git push
    ```
 
-7. **Report a brief summary** — counts of files added / modified / deleted (from `git show --stat HEAD` or the staged diff), plus the readme created/updated/deleted counts from step 2, and confirm the push succeeded. Keep it short; no need to list every filename unless the user asks.
+8. **Report a brief summary** — counts of files added / modified / deleted (from `git show --stat HEAD` or the staged diff), plus the readme created/updated/deleted/translated counts from steps 2-3, and confirm the push succeeded. Keep it short; no need to list every filename unless the user asks.
 
 ## Notes
 

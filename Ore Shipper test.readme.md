@@ -1,4 +1,5 @@
+<!-- dsp-readme-source-hash: 991fe612179f070c -->
 # 3GW test
 
-3GW充电功率物流塔，通过代码制作
-作者：我的小马叫丁真（b站、贴吧、youtube、抖音均同名）
+A logistics station with 3GW charging power, made via direct code/blueprint editing.
+Author: 我的小马叫丁真 (same username on Bilibili, Tieba, YouTube, and Douyin/TikTok)

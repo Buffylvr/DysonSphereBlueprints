@@ -1,3 +1,4 @@
+<!-- dsp-readme-source-hash: 172666b247115fdf -->
 # 100% coverage clear
 
 Uses only 28000 foundations to make a planet fully 100% buildable. Toggle "Foundations fill depressions only" to use even less foundations.

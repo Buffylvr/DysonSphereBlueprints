@@ -1,5 +1,6 @@
+<!-- dsp-readme-source-hash: 2bad85066def2707 -->
 # 2250
 
-消耗：25.8k硅\guik;、13.2k氢\qing;、13.4k铜\tongk;、13k钛\taik;、11.5k磁石\djcs;、10.4k铁\tiek;、9480煤\meik;、9120光栅\gss;、6920刺笋\csjj;、5780重氢\zqing;、4430石\shik;、2280原油\yyou;、2280水\shui;、2250可燃冰\krb;、1800光子\ljgz;、1730金伯利\jblk;、1440有机\yjjt;、1060分形硅\fxgs;、140翘曲\qqq;、2980增产剂Mk.III (自喷涂)\zcj3;
+Consumes: 25.8k Silicon Ore, 13.2k Hydrogen, 13.4k Copper Ore, 13k Titanium Ore, 11.5k Magnet, 10.4k Iron Ore, 9480 Coal, 9120 Grating Crystal, 6920 Spiniform Stalagmite Crystal, 5780 Deuterium, 4430 Stone, 2280 Crude Oil, 2280 Water, 2250 Fire Ice, 1800 Photon, 1730 Kimberlite Ore, 1440 Organic Crystal, 1060 Fractal Silicon, 140 Space Warper, 2980 Proliferator Mk.III (self-sprayed)
 
-耗电：7.8GW（另需物流耗电最大1.8GW）
+Power consumption: 7.8GW (plus up to 1.8GW additional for logistics)

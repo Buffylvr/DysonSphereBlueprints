@@ -1,6 +1,7 @@
-# 1/20 864杀
+<!-- dsp-readme-source-hash: aae1a31d677aaadd -->
+# 1/20 864-Kill
 
-1/20单片双基地864杀蓝图
-可以和产线蓝图紧贴
-基站仅配置了\hxs;拾取，其他需求自行调整
-要求能量伤害12级，不足自行酌情加塔
+1/20-slice, dual-base, 864-kill blueprint.
+Can be placed flush against production line blueprints.
+The base station is only configured to pick up [core drop item] — adjust other demand settings yourself.
+Requires energy damage level 12; add more turrets as needed if that's not enough.

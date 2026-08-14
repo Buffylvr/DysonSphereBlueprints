@@ -1,5 +1,6 @@
+<!-- dsp-readme-source-hash: 6ffe79ec2515a505 -->
 # fractionator huh
 
-默认不使用增产剂，将物流塔仓储改成需求后自动使用
-产量：11.8K /min 重氢，耗电656MW
-增产后：20.8K/min 重氢，249/min增产剂，耗电1.39GW
+Proliferator is not used by default — switch the logistics station's storage slot to Demand mode to enable it automatically.
+Output: 11.8K/min Deuterium, power consumption 656MW.
+With proliferator: 20.8K/min Deuterium, 249/min proliferator consumed, power consumption 1.39GW.

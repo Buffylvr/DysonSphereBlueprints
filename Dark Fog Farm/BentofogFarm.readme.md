@@ -1,3 +1,4 @@
+<!-- dsp-readme-source-hash: bdab40ff93b2e9eb -->
 # BentofogFarm
 
 The fog can be used to feed your mall. This is a make all buildings endgame mall powered by the dark fog loot!
