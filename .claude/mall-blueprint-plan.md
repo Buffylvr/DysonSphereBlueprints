@@ -415,8 +415,10 @@ Water Pump/Splitter don't share Steel or Glass with Fractionator/Storage
 Mk.II/Foundation), so this group will need more individual spurs on the
 floor plan than the tighter groups.
 
-### 🧪 TENTATIVE Group 8: Engine Cluster
+### 🔒 LOCKED Group 8: Engine Cluster
 **Missile Turret, Battlefield Analysis Base, Holo Beacon, Logistics Bot, Signal Tower.**
+
+Locked 2026-08-15 — no further changes to this group's membership.
 
 Missile Turret, Battlefield Analysis Base, and Logistics Bot all use Engine
 directly. Missile Turret + Battlefield Analysis Base additionally share
@@ -425,12 +427,18 @@ Tower are the loosest fits here — Holo Beacon's original tie was to
 Prototype (now untracked), and Signal Tower has no strong ingredient overlap
 with the rest of this group; both are riding along rather than tightly tied.
 
-### 🧪 TENTATIVE Group 9: Logistics Sub-Chain
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwlx7sKwkAQRuG3meIvxFXxUkzhLCQiUbxrLNUtFl0MG5VU--ySTHM-zpuzEsMJvTk7qHPM-u06jFvtDsYMyDGWbXKKLHugT5G3ylWRO2Aosr3o2426UgplcVJnylSZK5lvDWxhKHDZ1XctutZdKxjyrmHpkb85tuTrD48ouoY3OKPEA0980WAMWUOOkAvkDnkmeUEGsFmyOYUQuU5V8qmgUNWc04-N-QMcp0eU&v=11
+
+### 🔒 LOCKED Group 9: Logistics Sub-Chain
 **Planetary Logistics Station (PLS), Interstellar Logistics Station (ILS), Orbital Collector, Logistics Drone.**
+
+Locked 2026-08-15 — no further changes to this group's membership.
 
 Direct production chain: PLS feeds ILS, and ILS is a direct ingredient of
 Orbital Collector — build once, tap twice. Logistics Drone ties in via
 Processor, shared with PLS.
+
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwtzMFqwkAUheG3uYsDSkZEmsVZ9A6YYqOopa261GYx6JAw0ZLVPHsxt5v.42xOywlKaTmHm0lLfZeWJVxRSEOsnqkkUT-AQhJ3xsnQC-Ak0R9s-625Nmrj7cssjRfj1VgGc.L.uH8a6eEk8jg2jK3H9mM7OAnNQJ1KODf0Evo755KagVt844gfXPHAgAV0A.2EHqAX6DXrDTqDX2ZfSYyJfe5yyLXErmclv3TuD-CER0Q_&v=11
 
 ### Practical takeaway
 The three **identical-set pairs** are the easy wins — build them as literally the
