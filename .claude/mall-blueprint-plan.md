@@ -342,8 +342,10 @@ Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJw1iLEOgjAURf.mDX
 Note: Quantum Chemical Plant, previously considered for this group, stays
 out — it remains in the tentative Strange Matter Line group below instead.
 
-### 🧪 TENTATIVE Group 2: Strange Matter Line (not locked)
+### 🔒 LOCKED Group 2: Strange Matter Line
 **Quantum Chemical Plant, Destroyer, Gravity Missile Set, Interstellar Logistics Vessel, Corvette.**
+
+Locked 2026-08-15 — no further changes to this group's membership.
 
 Anchored on Strange Matter (Quantum Chemical Plant, Destroyer, Gravity Missile
 Set all use it), extended with Interstellar Logistics Vessel and Corvette
@@ -360,6 +362,8 @@ Processor Cluster below (2026-08-13). Plane Smelter removed 2026-08-12
 Collector removed 2026-08-12 (recipe corrected — no Frame Material). Once
 Strange Matter Line finalizes, no queued group remains — revisit the
 remaining ungrouped items list fresh.
+
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwtx7EOgjAURuG3ucM.GKqi011uE0gMMRg1gKPIULFCihqmPruBspwvp2N9QRxRx6tA8lx8L7qgFNjEkz32ETWMw5SUHMsZiMjxKXALSA0ocqzL8DqftKyhyHI118zN5g5zeygyzciyInNvWJMZPrwl14yco0CFB1p8MWIHOUKukBJSQ1ovL8gaOvE6JWsdD773xmdk-4FT-rFSf9x0P4g_&v=11
 
 ### 🔒 LOCKED Group 4: Super-Magnetic Ring / Processor Cluster
 **Conveyor Belt Mk.III, Pile Sorter, Ray Receiver, Miniature Particle Collider, Logistics Distributor.**
@@ -404,6 +408,8 @@ Board + Plasma Exciter + Steel + Stone Brick). Laser Turret and Spray Coater
 share the same 3-ingredient core (Circuit Board + Plasma Exciter + Steel),
 each adding one unique item (Photon Combiner / Microcrystalline Component).
 
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwlx7sKwkAQRuG3meIvxI23WEwzC0YlSkTUaKmmWHRJ2Kik2meXZJrzcWqWDZKUapYtJguqeVWq4rCYUcXY9skosByBMQU-KDdFHoChwLbUt4W6U3JlfVaXStrj2cKQ5-tQNzQf2g5tYMhVHcuI3L1iS6798JRC1XGBC6544oUvOswhe8gJUkIekFeUNySBXUWbkfeB29hEF3PyTcsZ.diYP3mxQg8_&v=11
+
 ### 🧪 TENTATIVE Group 7: Steel + Stone Brick / Iron Ingot Cluster
 **Fractionator, Storage Mk.II, Foundation, Water Pump, Splitter, Storage Mk.I.**
 
@@ -414,6 +420,8 @@ Ingot instead. The two sub-cores don't fully overlap with each other (e.g.
 Water Pump/Splitter don't share Steel or Glass with Fractionator/Storage
 Mk.II/Foundation), so this group will need more individual spurs on the
 floor plan than the tighter groups.
+
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJw1yMsKwjAQheG3mcVZSFK8LmYzAStSRRGvS2vBoNGSqHSVZ5c2uvm.mfPkK0YDerI8MBi2OmidtUf2G67.IUArpRRVjHmbnDzLBlDkeZ04JaQENHk2h.SbVXKRKBKzXXKSGLc4NtDk-NjVdi26hq41NNmqYemRPVdsyIYX98lXDa-wxxEX3PBGgyFkCdlCDpAScotyh2Qw02hycs5ziHW0sSBXB87pw1p.AXabRvI_&v=11
 
 ### 🔒 LOCKED Group 8: Engine Cluster
 **Missile Turret, Battlefield Analysis Base, Holo Beacon, Logistics Bot, Signal Tower.**
