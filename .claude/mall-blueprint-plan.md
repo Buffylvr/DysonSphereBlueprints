@@ -410,8 +410,10 @@ each adding one unique item (Photon Combiner / Microcrystalline Component).
 
 Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwlx7sKwkAQRuG3meIvxI23WEwzC0YlSkTUaKmmWHRJ2Kik2meXZJrzcWqWDZKUapYtJguqeVWq4rCYUcXY9skosByBMQU-KDdFHoChwLbUt4W6U3JlfVaXStrj2cKQ5-tQNzQf2g5tYMhVHcuI3L1iS6798JRC1XGBC6544oUvOswhe8gJUkIekFeUNySBXUWbkfeB29hEF3PyTcsZ.diYP3mxQg8_&v=11
 
-### 🧪 TENTATIVE Group 7: Steel + Stone Brick / Iron Ingot Cluster
+### 🔒 LOCKED Group 7: Steel + Stone Brick / Iron Ingot Cluster
 **Fractionator, Storage Mk.II, Foundation, Water Pump, Splitter, Storage Mk.I.**
+
+Locked 2026-08-15 — no further changes to this group's membership.
 
 Two merged sub-cores: Storage Mk.II + Foundation are an identical Steel +
 Stone Brick pair, extended by Fractionator (Steel + Stone Brick + Glass +
