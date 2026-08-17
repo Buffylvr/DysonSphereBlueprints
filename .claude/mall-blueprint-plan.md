@@ -400,8 +400,10 @@ Super-Magnetic Ring, extended with:
 
 Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwtx8sKwjAQRuG3mcW.EFO16mI2E7AiVRTxuvMSJWhoSVXqJs8ubdycj1OwQW9IBU.OSJLG098vBmnj.e8NSiVkGLMmGXmWNdAlz6vIMSIXQJFnvY-vl9F5JI9Mt9FxZNTgWEOR40Nb2zZvW7UtociamqVD9mxYk61e3Cdval5ihwOueOCNGilkAdlA9pAL5BHkCUmgJ0Fn5JznKpTBhpxcWXFGH1bqB9H4RmU_&v=11
 
-### 🧪 TENTATIVE Group 6: Plasma Exciter + Circuit Board + Steel Cluster
+### 🔒 LOCKED Group 6: Plasma Exciter + Circuit Board + Steel Cluster
 **Oil Extractor, Oil Refinery, Laser Turret, Spray Coater.**
+
+Locked 2026-08-16 — no further changes to this group's membership.
 
 Oil Extractor and Oil Refinery share an identical ingredient set (Circuit
 Board + Plasma Exciter + Steel + Stone Brick). Laser Turret and Spray Coater
