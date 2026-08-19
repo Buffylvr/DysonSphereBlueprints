@@ -380,7 +380,9 @@ excluded from this group.
 
 Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwlx7uOwjAUhOG3OcUUKAYWhWKaY4mgVRaBEBAogRQWayVyuKTys6PEzf.NNNzAZHkmDdcnzBbD0ArTXBp-YH6kod0PtyZ-hxQSqHsgk8Bd4pLQG2Ak0Fbp223yL1Em1sfkMpEPeFoY8TyPdWPLsd3YFkZc3VMn4q41rbjuybmEuucWJ5xxxwMv9FhAN9ADtILeoI-o.9Ap7CraQrwP7GIbXSzFtx0LedOYL5cQRDE_&v=11
 
-### 🧪 TENTATIVE Group 5: EM-Rail Ejector, Plasma Turret, Planetary Shield Generator, Attack Drone, Precision Drone, Antimatter Capsule
+### 🔒 LOCKED Group 5: EM-Rail Ejector, Plasma Turret, Planetary Shield Generator, Attack Drone, Precision Drone, Antimatter Capsule
+
+Locked 2026-08-17 — no further changes to this group's membership.
 
 Numbered 5 per user request (gap before it: Group 4, the Super-Magnetic
 Ring / Processor Cluster above, is now locked; Group 3 is the unrelated
@@ -398,7 +400,7 @@ Super-Magnetic Ring, extended with:
 - **Antimatter Capsule** — ties in via Particle Container, shared with
   Planetary Shield Generator and Attack Drone
 
-Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwtx8sKwjAQRuG3mcW.EFO16mI2E7AiVRTxuvMSJWhoSVXqJs8ubdycj1OwQW9IBU.OSJLG098vBmnj.e8NSiVkGLMmGXmWNdAlz6vIMSIXQJFnvY-vl9F5JI9Mt9FxZNTgWEOR40Nb2zZvW7UtociamqVD9mxYk61e3Cdval5ihwOueOCNGilkAdlA9pAL5BHkCUmgJ0Fn5JznKpTBhpxcWXFGH1bqB9H4RmU_&v=11
+Factoriolab planner: https://factoriolab.github.io/dsp/list?z=eJwtx81qwkAUhuG7OYtvUTqp1XZxNmcgKSVKRNpGd.6MMuiQMGkl3cy1S3KyeR.ehh1eFtRwfkCWDe4n..E6H7xMnmFMRo7xOaSgyLIBninyWtkpcgQMRba1vq3UpVIqH9.qu.Km5LPBwBaGAm.H-rHl2G5sC0Pe9SxP5A-OLfnul2cUXc8VfrDFCVf8occcsoJ8QWrIEXJNcoNksHmyBYUQuUtt8qmk0HZc0J2NeQDQgUg4&v=11
 
 ### 🔒 LOCKED Group 6: Plasma Exciter + Circuit Board + Steel Cluster
 **Oil Extractor, Oil Refinery, Laser Turret, Spray Coater.**
