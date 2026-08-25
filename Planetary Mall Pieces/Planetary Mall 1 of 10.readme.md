@@ -1,7 +1,7 @@
-<!-- dsp-readme-source-hash: 71b358752f613246 -->
+<!-- dsp-readme-source-hash: 0d554be821797b66 -->
 # Planetary Mall 1 of 10
 
-NEED TO VALIDATE THE REFINED OIL FACTORY STARTS FROM SCRACTH
+NEED TO VALIDATE THIS PASTES CORRECTLY
 
 
 Makes from raw and ships out via ILS: Tesla Tower, Satellite substation, Artificial Star, Advanced Mining Machine, Veritical launching silo.
