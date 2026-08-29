@@ -1,8 +1,5 @@
-<!-- dsp-readme-source-hash: 7f01fa1ce9b66cb5 -->
+<!-- dsp-readme-source-hash: 789d7a5f15875345 -->
 # Planetary Mall 2 of 10
-
-NEED TO VALIDATE THE REFINED OIL FACTORY STARTS FROM SCRACTH
-
 
 Makes from raw and ships out via ILS: Quantum chemical Planet, Interstellar Logistics Vessel, Corvette, Destroyer, Gravity Missile Set
 
