@@ -16,7 +16,7 @@ Destination: this repo's root
 1. **Mirror-copy** with robocopy via the PowerShell tool (not Bash — Git Bash mangles leading-slash flags like `/MIR` into Windows drive paths). This is a true mirror: files deleted from the game folder are also deleted from the repo.
 
    ```powershell
-   robocopy "C:\Users\buffy\Documents\Dyson Sphere Program\Blueprint" "C:\Users\buffy\dsp_blueprints" /MIR /XD .git .claude /XF .gitignore "*.swp" "*.readme.md"
+   robocopy "C:\Users\buffy\Documents\Dyson Sphere Program\Blueprint" "C:\Users\buffy\dsp_blueprints" /MIR /XD .git .claude "Dyson Sphere Layouts" /XF .gitignore "*.swp" "*.readme.md"
    ```
 
    Run robocopy as the sole command in the call — don't append a second statement (e.g. `Write-Output "EXIT:$LASTEXITCODE"`). A string with an embedded `$variable` expansion trips the permission classifier's "expandable strings with embedded expressions" check and forces a prompt even when the base command is allowlisted. The PowerShell tool's own result already reports the exit code — read that directly instead of echoing it.
@@ -64,5 +64,6 @@ Destination: this repo's root
 
 - Never touch `.git/`, `.claude/`, `.gitignore`, `*.swp`, or `*.readme.md` files — they're excluded from the mirror on both the copy and delete side. `*.readme.md` is repo-only (generated in step 2), so if it's ever missing from the robocopy `/XF` list, `/MIR` will delete every readme on the next sync, right before step 2 regenerates them from scratch — destroying the idempotency hash and re-triggering translation on every non-English one. Double-check this flag stays in the command if this skill is ever edited.
 - Never write anything back into the `Documents\Dyson Sphere Program\Blueprint` folder — sync is one-way.
+- `Dyson Sphere Layouts/` (repo root) holds sphere-shell/layout blueprints (`DYBP:...` format, exported from the in-game Dyson Sphere Editor) — a different save format from regular factory blueprints, and one the game does **not** export into the `Blueprint` folder above. These are added to the repo by hand, not synced from the game folder, so this directory is excluded (`/XD`) from the mirror — without that exclusion, `/MIR /PURGE` would delete every file in it on the next sync since nothing in it has a source-folder counterpart. Double-check this exclusion stays in the robocopy command if the command is ever edited, the same way the `*.readme.md` exclusion must stay.
 - If robocopy or git reports a real error (exit code >= 8 for robocopy, non-zero for git push), stop and surface the error instead of retrying blindly.
 - The `<name>.readme.md` files are fully derived from each blueprint's own header (name + description fields) — they're regenerated every sync, so don't hand-edit them; edit the blueprint's description in-game (or via a direct header patch, see [[dsp_blueprint_editing]]) instead.
