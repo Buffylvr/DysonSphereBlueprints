@@ -1,7 +1,4 @@
-<!-- dsp-readme-source-hash: 581b35e4310c12cd -->
+<!-- dsp-readme-source-hash: 6cbbf9af4260faf4 -->
 # just beacons
 
-1/20-slice, dual-base, 864-kill blueprint.
-Can be placed flush against production line blueprints.
-The base station is only configured to pick up [core drop item] — adjust other demand settings yourself.
-Requires energy damage level 12; add more turrets as needed if that's not enough.
+This is the BP for just the beacons for the ZeroRin style DF farm. It also has the signal towers in it to make sure it anchors/lines up properly.

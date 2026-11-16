@@ -1,9 +1,9 @@
-<!-- dsp-readme-source-hash: c909e5588a3d9a3b -->
+<!-- dsp-readme-source-hash: 37b8ab37695fe3e7 -->
 # Planetary BentofogFarm
 
 The fog can be used to feed your mall. This is a make all buildings endgame mall powered by the dark fog loot!
 
-The beacons will attrack 10 bases. The defenses are placed such that 6 raider camps may spawn for 360/m kills (x1.25 on aggressive) per base. This is called a bonsai farm.
+The beacons will attract 10 bases. The defenses are placed such that 6 raider camps may spawn for 360/m kills (x1.25 on aggressive) per base. This is called a bonsai farm.
 
 The BABs will sort out 48 different items into boxes, and those are delivered to the bento box ring with bots. The bento box ring provides the mall assemblers with their ingredients. On the outside there is a separate frame material factory attached to the bento box ring. 
 
