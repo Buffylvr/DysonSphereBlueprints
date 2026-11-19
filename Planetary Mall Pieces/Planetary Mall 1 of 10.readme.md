@@ -1,8 +1,5 @@
-<!-- dsp-readme-source-hash: 0d554be821797b66 -->
+<!-- dsp-readme-source-hash: e13365a3e656a07c -->
 # Planetary Mall 1 of 10
-
-NEED TO VALIDATE THIS PASTES CORRECTLY
-
 
 Makes from raw and ships out via ILS: Tesla Tower, Satellite substation, Artificial Star, Advanced Mining Machine, Veritical launching silo.
 
