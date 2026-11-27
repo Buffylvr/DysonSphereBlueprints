@@ -1,7 +1,7 @@
-<!-- dsp-readme-source-hash: c6d03e01ff917da8 -->
+<!-- dsp-readme-source-hash: 221d6efae7ed760e -->
 # Ray Receiver - New - DF (Testing)
 
 Uses full belt magic.
 
-Produces ~129k/m critical photons
-Consumes 2.6 TW of sphere power
+Produces ~256k/m critical photons
+Consumes 5.2 TW of sphere power
